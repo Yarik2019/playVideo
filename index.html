@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="videoPlayer">
+            <video src="./video/Qara 07 - Azeri (2021).mp4" class="video" id="video"></video>
+            <div class="controls">
+                <div class="controls__paly" id="btnPlay"><img class="btn img"  id="ImgSrc" src="./img/play.svg" alt=""></div>
+                <div class="controls__stop"  id="btnStop"><img class=" btn img" src="./img/stop.svg" alt=""></div>
+                <div class="progress__time">
+                    <div class="controls__progress btn" id="PorgressContainer">
+                        <div class="controls__progress--bar" id="progressBar"></div>
+                    </div>
+                    <div class="controls__time" id="time">
+                        0:00    
+                    </div>
+                </div>
+                <div class="fullScreen">
+                    <img src="./img/fullScreen.svg" id="fullScreen" class="btn img volumes" alt="">
+                    
+                </div> 
+                <div class="volume">
+                    <img src="./img/volumeUp).svg" id="volume" class="btn img volumes" alt="">
+                    
+                </div>   
+                 
+            </div>
+            <div class="volume__container" id="vContainer">
+                <div class="volume__container__block" id="volumeContainer">
+                    <div class="volume__container--bar" id="volumeContainerBar"></div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/video.js"></script>
+</body>
+</html>
